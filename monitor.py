@@ -19,6 +19,8 @@ for div in items_divs:
         print(item)
     stock[key] = item
 
+print(stock)
+
 #monitoring
 while True:
     newstock={}
@@ -32,7 +34,7 @@ while True:
         if key in stock:
             pass
         else:
-            #todo notify this item
+            item.notify('https://hooks.slack.com/services/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')
             print('notified')
             stock[key]=item
         newstock[key] = item
